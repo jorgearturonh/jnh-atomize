@@ -1,5 +1,6 @@
-const currentDevice = () => {
-  const currentWidth = window.innerWidth;
+var currentDevice = function currentDevice() {
+  var currentWidth = window.innerWidth;
+
   if (currentWidth < 576) {
     return 'xs';
   } else if (currentWidth < 768) {
@@ -14,5 +15,4 @@ const currentDevice = () => {
     return "Couldn't find device";
   }
 };
-
 export default currentDevice;
